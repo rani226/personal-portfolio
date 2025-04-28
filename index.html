@@ -6,6 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Personal-porfolio</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <!-- Devicon -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
         <script src="https://kit.fontawesome.com/3859754b81.js" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -34,39 +37,81 @@
             </div>
         </div>
     </div>
-    <!--About-->
-    <div id="about">
-<div class="container">
-    <div class="row">
+
+    <!-- ABOUT SECTION -->
+<div id="about">
+    <div class="container">
+      <div class="row">
+        <!-- Left Column -->
         <div class="about-col-1">
-            <img src="images/user1.png" style="width: 500px;border-radius:15px;" >
+          <img src="images/user1.png" style="width: 500px;height:500px; border-radius:15px;">
         </div>
+  
+        <!-- Right Column -->
         <div class="about-col-2">
-            <h1 class="sub-title">About me</h1>
-            <p>I'm Rani, a passionate web and app developer with experience in frontend technologies.<br> I'm skilled in Java, Django, Flask, DSA in Java, and Git. I've completed projects<br> in Django and Flask and am ready to work in any domain.<br> I'm eager to collaborate on innovative projects. Feel free to reach out for potential collaboration.</p>
-            <div class="tab-titles">
-            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-            <!--<p class="tab-links">Experience</p>-->
-            <p class="tab-links" onclick="opentab('education')">Education</p>
-        </div>
-        <div class="tab-contents active-tab" id="skills">
-            <ul>
-                <li><span>Programming Langauges</span><br>Java(Intermediate) , Python (Basic), HTML , CSS , javascript(Basic), SQL</li>
-                <li><span>Tools and Framework</span><br>Git, Django, Flask , React, AWS, Figma, Linux </li>
-                <!--<li><span>App development</span><br>Building Android/ios apps</li>-->
+            <h2 class="section-title">About Me</h2>
+          <p>I'm Rani, passionate about developing web applications using the skills listed below. I aim to create impactful solutions that contribute to societal growth</p>
+  
+          <!-- Tab Links -->
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+            <p class="tab-links" onclick="openTab('education')">Education</p>
+          </div>
+  
+          <!-- Tab Contents -->
+          <div class="tab-contents active-tab" id="skills">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+              <li>
+                <span>Programming Languages</span><br>
+                <div class="skill-icons">
+                  <div class="skill-item"><i class="devicon-java-plain colored"></i><p>Java (Intermediate)</p></div>
+                  <div class="skill-item"><i class="devicon-python-plain colored"></i><p>Python (Basic)</p></div>
+                  <div class="skill-item"><i class="devicon-html5-plain colored"></i><p>HTML</p></div>
+                  <div class="skill-item"><i class="devicon-css3-plain colored"></i><p>CSS</p></div>
+                  <div class="skill-item"><i class="devicon-javascript-plain colored"></i><p>JavaScript (Basic)</p></div>
+                  <div class="skill-item"><i class="devicon-mysql-plain colored"></i><p>SQL</p></div>
+                </div>
+              </li>
+              <li>
+                <span>Tools & Frameworks</span><br>
+                <div class="skill-icons">
+                  <div class="skill-item"><i class="devicon-git-plain colored"></i><p>Git</p></div>
+                  <div class="skill-item"><i class="devicon-django-plain colored"></i><p>Django</p></div>
+                  <div class="skill-item"><i class="devicon-react-original colored"></i><p>React</p></div>
+                  <div class="skill-item"><i class="fa-brands fa-figma"></i><p>Figma</p></div>
+
+                  <div class="skill-item">
+                    <i class="fab fa-aws"></i>
+                    <p>AWS</p>
+                  </div>
+                  <div class="skill-item">
+                    <i class="fas fa-flask"></i>
+                    <p>Flask</p>
+                  </div>
+                  <div class="skill-item">
+                    <i class="fab fa-linux"></i>
+                    <p>Linux</p>
+                  </div>
+
+                </div>
+              </li>
             </ul>
-        </div>
-        <div class="tab-contents" id="education">
+          </div>
+  
+          <div class="tab-contents" id="education">
             <ul>
-                <li><span>2022-2025</span><br>B.Tech in Institute of Aeronautical Engineering(CSE)<br>cpga-8.16</li>
-                <li><span>2019-2021</span><br>Diploma in Mahaveer institute of science and techonology(CME)<br>cpga-9.3</li>
-                <li><span>2017-2019</span><br>Schooling in Abhyas high school<br>cpga-8.8</li>
+              <li><span>2022-2025</span><br>B.Tech in Institute of Aeronautical Engineering (CSE)<br>CGPA - 8.16</li>
+              <li><span>2019-2021</span><br>Diploma in Mahaveer Institute of Science and Technology (CME)<br>CGPA - 9.3</li>
+              <li><span>2017-2019</span><br>Schooling in Abhyas High School<br>CGPA - 8.8</li>
             </ul>
+          </div>
+  
         </div>
-        </div>
+      </div>
     </div>
-</div>
-    </div>
+  </div>
+  
     <!--------Services------->
     <div id="services">
         <div class="container">
@@ -126,7 +171,7 @@
                     </div>
                 </div>
             </div>
-            <!--<a href="#" class="btn">See more</a>-->
+           
         </div>
     </div>
     <!-----------comment---------->
@@ -136,10 +181,8 @@
                 <div class="contact-left">
                 <h1 class="sub-title">Contact me</h1>
                 <p><i class="fa-solid fa-paper-plane"></i>ranikanaparthi226@gmail.com</p><br>
-                <!--<p><i class="fa-solid fa-square-phone"></i>6301839561</p><br><br>-->
                 <div class="social-icons">
-                    <!--<a href="https://www.facebook.com/login/"><i class="fa-brands fa-facebook"></i></a>-->
-                    <!--<a href="https://twitter.com/i/flow/login"><i class="fa-brands fa-twitter-square"></i></a>-->
+                  
                     <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
                     <a href="https://www.linkedin.com/in/rani-kanaparthi-bb17502a1/"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
@@ -161,18 +204,16 @@
         </div>
     </div>
     <script>
-        var tablinks=document.getElementsByClassName("tab-links");
-        var tabcontents=document.getElementsByClassName("tab-contents");
-        function opentab(tabname){
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link");
-            }
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
+         function openTab(tabName) {
+  const tabLinks = document.querySelectorAll('.tab-links');
+  const tabContents = document.querySelectorAll('.tab-contents');
+
+  tabLinks.forEach(link => link.classList.remove('active-link'));
+  tabContents.forEach(tab => tab.classList.remove('active-tab'));
+
+  document.getElementById(tabName).classList.add('active-tab');
+  event.currentTarget.classList.add('active-link');
+}
     </script>
     <script>
         var sidemenu=document.getElementById("sidemenu");
