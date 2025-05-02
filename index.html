@@ -32,8 +32,9 @@
             <br>
             <br>
             <div class="header-text">
-                <p>Java Programmer</p>
+                <br>
                 <h1>Hi,I'm <span>Rani</span></h1>
+                <div>I am a <span id="role" class="highlight fade-in">Java Developer</span></div>
             </div>
         </div>
     </div>
@@ -101,7 +102,7 @@
   
           <div class="tab-contents" id="education">
             <ul>
-              <li><span>2022-2025</span><br>B.Tech in Institute of Aeronautical Engineering (CSE)<br>CGPA - 8.2</li>
+              <li><span>2022-2025</span><br>B.Tech in Institute of Aeronautical Engineering (CSE)<br>CGPA - 8.16</li>
               <li><span>2019-2021</span><br>Diploma in Mahaveer Institute of Science and Technology (CME)<br>CGPA - 9.3</li>
               <li><span>2017-2019</span><br>Schooling in Abhyas High School<br>CGPA - 8.8</li>
             </ul>
@@ -132,7 +133,7 @@
                 <div>
                     <i class="fa-brands fa-app-store"></i>
                     <h2>DSA</h2>
-                    <p>I have solved more than 200 problems on Coding Platforms such as Leetcode and GFG.I solve the Problems in Java utilizing the various Data Structures.</p>
+                    <p>I have solved more than 300+ problems on Coding Platforms such as Leetcode and GFG.I solve the Problems in Java utilizing the various Data Structures.</p>
                     <!--<a href="#">Learn more</a>-->
                 </div>
             </div>
@@ -242,5 +243,26 @@
             .catch(error => console.error('Error!', error.message))
         })
       </script>
+
+
+<script>
+  const roles = ["Java Developer", "Leetcoder", "Software Developer"];
+  let index = 0;
+  const roleEl = document.getElementById("role");
+
+  setInterval(() => {
+    // Fade out
+    roleEl.classList.remove("fade-in");
+    roleEl.classList.add("fade-out");
+
+    // After fade-out, change text and fade-in
+    setTimeout(() => {
+      index = (index + 1) % roles.length;
+      roleEl.textContent = roles[index];
+      roleEl.classList.remove("fade-out");
+      roleEl.classList.add("fade-in");
+    }, 500);
+  }, 2000); // change every 2 seconds
+</script>
     </body>
 </html>
