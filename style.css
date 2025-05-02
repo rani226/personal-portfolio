@@ -485,3 +485,18 @@ nav .fa-solid{
     margin-top:-40px;
     display:block;
 }
+
+
+.highlight {
+    color: #ff004f; /* red */
+    display: inline-block;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .fade-out {
+    opacity: 0;
+  }
+
+  .fade-in {
+    opacity: 1;
+  }
